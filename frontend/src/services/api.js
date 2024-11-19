@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://127.0.0.1:5000"; // Base URL of the backend
+const API_URL = "https://testing2-mc2o.onrender.com"; // Base URL of the backend
 
 export const insertKeyValue = async (key, value) => {
   return await axios.post(`${API_URL}/insert`, { key, value });
