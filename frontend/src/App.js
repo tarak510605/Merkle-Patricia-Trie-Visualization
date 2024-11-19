@@ -1,5 +1,5 @@
 import React from "react";
-import TrieVisualizer from "./components/TrieVisualizer";
+import TrieVisualizer from "./components/Trieviz";
 
 function App() {
   return (
