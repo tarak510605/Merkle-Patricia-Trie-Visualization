@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ReactFlow, { Controls } from "react-flow-renderer";
 import dagre from "dagre";
+import './Trieviz.css';
 
 const TrieVisualizer = () => {
   const [selectedTrie, setSelectedTrie] = useState("Merkle Patricia Trie");
@@ -73,7 +74,13 @@ const TrieVisualizer = () => {
     
     // Create a new directed graph
     const g = new dagre.graphlib.Graph();
-    g.setGraph({ rankdir: "TB", nodesep: 70, ranksep: 50 });
+    g.setGraph({ 
+      rankdir: "TB", 
+      nodesep: 70, 
+      ranksep: 80,
+      marginx: 20,
+      marginy: 40
+    });
     g.setDefaultEdgeLabel(() => ({}));
 
     // Add root node first
